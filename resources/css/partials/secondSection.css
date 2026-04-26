@@ -1,0 +1,28 @@
+.second__content{
+    max-width: 1380px;
+    width: 100%;
+    margin: 0 auto;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second__title{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 40px 0;
+}
+
+.second__grid{
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr); /* 4 por linha */
+
+    gap: 20px; /* espaço entre os cards */
+
+    max-width: 1380px;
+    margin: 0 auto; /* centraliza */
+
+}

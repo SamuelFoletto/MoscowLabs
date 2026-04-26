@@ -1,0 +1,27 @@
+.card{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    padding-bottom: 10px;
+    transition: ease 0.5s;
+}
+
+
+.card__img{
+    width: 300px;
+    height: 350px;
+
+}
+
+.card__title{
+
+    font-size: 20px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
