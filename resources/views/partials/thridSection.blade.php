@@ -4,6 +4,6 @@
     </div>
 
     <div class="thrid__image">
-        image
+        Sobre nós
     </div>
 </div>

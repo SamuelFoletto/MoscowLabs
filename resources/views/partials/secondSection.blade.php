@@ -3,25 +3,14 @@
         Produtos em destaque
     </div>
     <div class="second__grid">
-        <x-card
-            imagem="{{ asset('storage/produtos/1/till_death.png') }}"
-            nome="Camiseta - Till Death"
-            valor="89,90"
-        />
-        <x-card
-            imagem="{{ asset('storage/produtos/1/till_death.png') }}"
-            nome="Camiseta - Till Death"
-            valor="89,90"
-        />
-        <x-card
-            imagem="{{ asset('storage/produtos/1/till_death.png') }}"
-            nome="Camiseta - Till Death"
-            valor="89,90"
-        />
-        <x-card
-            imagem="{{ asset('storage/produtos/1/till_death.png') }}"
-            nome="Camiseta - Till Death"
-            valor="89,90"
-        />
+        <div class="second__grid">
+            @foreach ($produtos as $produto)
+                <x-card
+                    imagem="{{ asset('storage/' . $produto->imagem) }}"
+                    nome="{{ $produto->nome }}"
+                    valor="{{ number_format($produto->valor, 2, ',', '.') }}"
+                />
+            @endforeach
+        </div>
     </div>
 </div>
