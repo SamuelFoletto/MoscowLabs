@@ -4,22 +4,22 @@
     </div>
     <div class="second__grid">
         <x-card
-            imagem="{{ asset('storage/produtos/1/1.jpeg') }}"
+            imagem="{{ asset('storage/produtos/1/till_death.png') }}"
             nome="Camiseta - Till Death"
             valor="89,90"
         />
         <x-card
-            imagem="{{ asset('storage/produtos/1/1.jpeg') }}"
+            imagem="{{ asset('storage/produtos/1/till_death.png') }}"
             nome="Camiseta - Till Death"
             valor="89,90"
         />
         <x-card
-            imagem="{{ asset('storage/produtos/1/1.jpeg') }}"
+            imagem="{{ asset('storage/produtos/1/till_death.png') }}"
             nome="Camiseta - Till Death"
             valor="89,90"
         />
         <x-card
-            imagem="{{ asset('storage/produtos/1/1.jpeg') }}"
+            imagem="{{ asset('storage/produtos/1/till_death.png') }}"
             nome="Camiseta - Till Death"
             valor="89,90"
         />
