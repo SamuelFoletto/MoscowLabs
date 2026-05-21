@@ -3,12 +3,20 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Produto extends Model
 {
+    use SoftDeletes;
     protected $fillable = [
         'nome',
         'valor',
-        'imagem'
+        'imagem',
+        'descricao'
     ];
+
+
+    public function estoque(){
+        return $this->hasMany('App\Models\Estoque', 'produto_id', 'id');
+    }
 }

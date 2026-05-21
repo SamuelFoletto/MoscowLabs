@@ -4,8 +4,7 @@
 
 @section('conteudo')
 
-    <div >
-        <div >
+    <div class="listagem__produtos">
             @foreach ($produtos as $produto)
                 @include('app.produto.components.card', [
                     'imagem' => asset('storage/' . $produto->imagem),
@@ -13,7 +12,6 @@
                     'valor' => number_format($produto->valor, 2, ',', '.')
                 ])
             @endforeach
-        </div>
     </div>
 
 @endsection

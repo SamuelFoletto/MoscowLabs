@@ -1,0 +1,9 @@
+.listagem__produtos{
+    width: 1380px;
+    margin: 30px auto 0;
+    height: calc(100vh - 130px);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+
+}

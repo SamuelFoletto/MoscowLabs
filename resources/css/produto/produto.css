@@ -1,9 +1,0 @@
-.produto__content{
-    width: 100%;
-    height: calc(100vh - 130px);
-    display: flex;
-}
-
-.produto__img_content{
-    width: 50%;
-}

@@ -1,0 +1,18 @@
+.produto__content{
+    width: 100%;
+    height: calc(100vh - 130px);
+    display: flex;
+}
+
+.produto__img-content{
+    width: 50%;
+}
+
+
+.produto__text-content h2{
+    font-size: 3rem;
+}
+
+.produto__value{
+    font-weight: bold;
+}
