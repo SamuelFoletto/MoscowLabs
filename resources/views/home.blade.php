@@ -3,8 +3,8 @@
 @section('titulo', 'Moscow Labs')
 
 @section('conteudo')
-    @include('partials.fistSection')
-    @include('partials.secondSection')
-    @include('partials.thridSection')
+    @include('layout.fistSection')
+    @include('layout.secondSection')
+    @include('layout.thridSection')
 
 @endsection

@@ -11,6 +11,6 @@ class HomeController extends Controller
     {
         $produtos = Produto::latest()->take(4)->get();
 
-        return view('home', compact('produtos'));
+        return view('home', ['produtos' => $produtos]);
     }
 }

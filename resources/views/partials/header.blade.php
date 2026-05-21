@@ -5,6 +5,9 @@
 
     <div class="header__navbar">
         <div class="header__logocontent">
+            <a href="{{route('home')}}">
+
+
             <img
                 src="{{ asset('assets/moscow.png') }}"
                 alt="logo"
@@ -13,6 +16,7 @@
                 data-logo-white="{{ asset('assets/moscow.png') }}"
                 data-logo-dark="{{ asset('assets/moscow_black.png') }}"
             >
+            </a>
         </div>
 
         <div>
@@ -24,7 +28,7 @@
                 <li class="header__navitem header__link">
                     <a href="#">Masculino</a>
                     <div class="header__dropdown">
-                        <a href="#">Camisetas</a>
+                        <a href="{{route('produto.index')}}">Camisetas</a>
                         <a href="#">Calças</a>
                         <a href="#">Tênis</a>
                     </div>

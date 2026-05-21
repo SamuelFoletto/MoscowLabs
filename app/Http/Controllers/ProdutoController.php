@@ -6,10 +6,18 @@ use Illuminate\Http\Request;
 use App\Models\Produto;
 class ProdutoController extends Controller
 {
-    public function index()
-    {
-        $produtos = Produto::latest()->take(4)->get();
+    public function __construct(Produto $produto){
+        $this->produto = $produto;
+    }
 
-        return view('home', compact('produtos'));
+    public function index(){
+        $produtos = $this->produto->all();
+        return view('app.produto.index', ['produtos' => $produtos]);
+    }
+    public function show(string $id){
+
+        $produto = $this->produto->find($id);
+
+        return view('app.produto.show', ['produto' => $produto]);
     }
 }
